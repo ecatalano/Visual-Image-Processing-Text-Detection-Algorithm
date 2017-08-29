@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( assn4 )
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( assn4 assn4.cpp )
+target_link_libraries( assn4 ${OpenCV_LIBS} )
